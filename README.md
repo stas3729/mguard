@@ -34,9 +34,17 @@ To get started with this application, follow these steps:
    git clone https://github.com/stas3729/mguard.git
    cd your-repo
 
+2. **Install Api Dependencies** (Optional)
+
+   If you need to manually install or update dependencies, navigate to the api directory:
+
+   ```bash
+   cd api
+   yarn install
+
 ## Installation
 
-2. **Build and Start the Application**
+3. **Build and Start the Application**
 
    Use Docker Compose to build the images and start the services. This will also handle database migrations:
 
@@ -46,13 +54,7 @@ To get started with this application, follow these steps:
 
 ## Installation
 
-3. **Install Backend Dependencies** (Optional)
 
-   If you need to manually install or update dependencies, navigate to the api directory:
-
-   ```bash
-   cd api
-   yarn install
 
 4. **Access the Application**
 
