@@ -1,14 +1,14 @@
 services:
   api:
     build:
-      context: .
+      context: api
       dockerfile: Dockerfile
     ports:
       - "7000:7000"
     volumes:
-      - .:/usr/src/app
+      - ./api:/usr/src/app
       - /usr/src/app/node_modules
-    env_file: .env
+    env_file: api/.env
     restart: on-failure
     entrypoint: ["./entrypoint.sh"]
     command: yarn start:dev
