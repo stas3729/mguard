@@ -9,10 +9,10 @@ jobs:
       - name: Get repository code
         uses: actions/checkout@v4
       - name: Install dependencies
-        working-directory: .
+        working-directory: ./api
         run: yarn install
       - name: Lint application
-        working-directory: .
+        working-directory: ./api
         run: yarn lint
   test:
       runs-on: ubuntu-22.04
@@ -20,8 +20,8 @@ jobs:
         - name: Get repository code
           uses: actions/checkout@v4
         - name: Install dependencies
-          working-directory: .
+          working-directory: ./api
           run: yarn install
         - name: Test application
-          working-directory: .
+          working-directory: ./api
           run: yarn test
