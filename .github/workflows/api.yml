@@ -1,0 +1,27 @@
+name: Mguard API
+
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        working-directory: .
+        run: yarn install
+      - name: Lint application
+        working-directory: .
+        run: yarn lint
+  test:
+      runs-on: ubuntu-22.04
+      steps:
+        - name: Get repository code
+          uses: actions/checkout@v4
+        - name: Install dependencies
+          working-directory: .
+          run: yarn install
+        - name: Test application
+          working-directory: .
+          run: yarn test
