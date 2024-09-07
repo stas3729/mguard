@@ -42,7 +42,6 @@ To get started with this application, follow these steps:
    cd api
    yarn install
 
-## Installation
 
 3. **Build and Start the Application**
 
@@ -51,9 +50,6 @@ To get started with this application, follow these steps:
    ```bash
    docker compose build --no-cache
    docker compose up
-
-## Installation
-
 
 
 4. **Access the Application**
