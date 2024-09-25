@@ -72,7 +72,9 @@ export class AppService {
   > {
     const date = new Date();
     const currentYear = date.getFullYear();
+    console.log(currentYear);
     const currentMonth = months[date.getMonth()];
+    console.log(currentMonth);
     return this.findMonthByNameAndYear(currentYear, currentMonth);
   }
 
